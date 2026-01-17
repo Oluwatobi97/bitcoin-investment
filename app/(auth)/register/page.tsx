@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function RegisterPage() {
   return (
@@ -62,12 +63,18 @@ export default function RegisterPage() {
             </label>
           </div>
 
-          <button
+          {/* <button
             type="submit"
             className="w-full bg-[#2563EB] text-white py-3 rounded-lg font-semibold hover:bg-[#1d4ed8] transition shadow-lg shadow-[#2563EB]/30"
           >
             Create Account
-          </button>
+          </button> */}
+          <Link
+            href="/dashboard"
+            className="w-full block text-center bg-[#2563EB] text-white py-3 rounded-lg font-semibold hover:bg-[#1d4ed8] transition shadow-lg shadow-[#2563EB]/30"
+          >
+            Create Account
+          </Link>
         </form>
 
         <div className="mt-6 text-center  text-gray-600 text-sm">
