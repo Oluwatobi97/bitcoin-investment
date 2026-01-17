@@ -1,4 +1,5 @@
 import Link from "next/link";
+import logo2 from "@/components/icons/logo.png"
 
 export default function Home() {
   return (
@@ -10,9 +11,11 @@ export default function Home() {
             {/* Logo */}
             <Link
               href="/"
-              className="text-xl font-bold text-white hover:text-cyan-300 transition"
+              className="text-xl  text-[#2563EB]  font-bold hover:text-cyan-300 transition flex items-center gap-2"
             >
-              Investment Platform
+              {/* <img src={logo2.src} alt="Logo" className="h-16 w-5 " /> */}
+
+              BLOCKCHAIN-INVESTMENT
             </Link>
 
             {/* Navigation Links */}
